@@ -1,4 +1,99 @@
+:root {
+    --open-sans:"Open Sans", sans-serif;       /* шрифт */
+    --nunito-sans: "Nunito Sans", sans-serif;  /* шрифт */
+
+    --accent-light: #FBB731;  /* цвет кнопки */
+    --accent-dark: #F37335;   /* цвет кнопки */
+                                
+    --dark:#443737;           /* цвет текста для кнопки */
+    --light:#FFFFFF;          /* цвет текста для кнопки */                  
+     
+} 
+
 body{
-    font-family: "Open Sans", sans-serif;
-   /* font-family: "Nunito Sans", sans-serif; */
+    font-family: var(--open-sans)
 }
+
+.logo{
+    display: block;
+    width: 176px;
+    height: 56px;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.container{
+    width:100%;
+    max-width:1182px;
+    margin:0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.header{
+    display: flex; /* слова в ряд*/
+    align-items:center; /*расположение по центру*/
+    gap: 196px;                /* свойство элемента между ячейками*/
+    padding-top:26px;
+    padding-bottom: 26px;
+}
+
+.nav {
+    flex-grow: 1;
+    display:flex;
+    gap:46px;
+
+}
+.nav-link{
+    color:var(--dark);
+    text-decoration:none;
+    font-size:20px;
+    font-weight:600;
+}
+
+.nav-link::after{       /*свойство желтой линии под текстом*/
+    content:'';
+    display:block;
+    width: 100%;
+    height:3px;
+    background-color: transparent; /*прозрачная линия*/
+    border-radius:1.5px;
+}
+.nav-link:hover:after{   /*при наведении курсором горит линия (псевдоэлемент)*/
+    background-color: var(--accent-light);
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    color:var(--dark);
+    text-decoration:none;
+    font-size:15px;
+    font-weight:700;
+}
+
+.cart::before{  /*корзина*/
+    content:'';
+    display: block;
+    width: 30px;
+    height: 26px;
+    background-image: url(../images/cart.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cart-count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    font-size: 10px;
+    color: var(--light);
+    background-color: var(--accent-dark);
+    border-radius: 100%;
+    
+}
+
