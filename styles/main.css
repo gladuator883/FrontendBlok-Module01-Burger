@@ -9,6 +9,7 @@
     --light:#FFFFFF;          /* цвет текста для кнопки */                  
     
     --light-rgb:255, 255, 255;
+    --dark-rgb:68, 55, 55;
 } 
 
 body{
@@ -32,7 +33,12 @@ body{
 
 }
 /*Header*/
+
 .header{
+    border-bottom: 1px solid #dedede
+}
+
+.header-wrapper{
     display: flex; /* слова в ряд*/
     align-items:center; /*расположение по центру*/
     gap: 196px;                /* свойство элемента между ячейками*/
@@ -43,7 +49,7 @@ body{
 .nav {
     flex-grow: 1;
     display:flex;
-    gap:46px;
+    gap: 47px;
 
 }
 .nav-link{
@@ -151,6 +157,8 @@ body{
     font-style: normal;
     font-weight: 700;
     text-transform: capitalize;
+    margin-top: 16px;
+    margin-bottom: 20px;
 }
 
 .hero-description{
@@ -161,3 +169,71 @@ body{
     line-height: 160%;
 }
 
+.banner{
+    margin-top:140px;
+}
+
+.banner-wrapper{
+    padding: 100px;
+    background-image: url(../images/burger.svg);
+    display:block;
+    background-repeat: no-repeat;
+}
+
+
+.banner-title{
+    color:var(--light);
+    font-family:var(--nunito-sans) ;
+    font-weight:900;
+    font-size: 60px;
+    line-height: 76px;
+    text-transform: uppercase;
+    margin-top:0px;
+    margin-bottom: 11px;
+}
+
+
+.banner-title span{
+    display:block;
+    font-family: var(--open-sans);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 128%;
+    text-align: center;
+    text-transform: uppercase;
+    color:rgba(var(--light-rgb), 1);
+    max-width: 95px;
+    margin-bottom:4px;
+    padding: 5px 0;
+    border-radius:14px;
+    background-color: var(--accent-dark);
+}
+
+
+
+
+.banner-description{
+    max-width:328px;
+    margin-top:0;
+    margin-bottom:13px;
+    font-family: var(--open-sans);
+    color:rgba(var(--light-rgb), 0.8);
+    font-weight: 400;
+    font-size: 15px;
+    font-style:normal;
+    line-height: 160%;
+}
+
+.banner-btn{
+    background-color: var(--accent-light);
+    Width:170px;
+    height: 58px;
+    border-radius:5px;
+    text-transform: uppercase;
+    font-size:14px;
+    font-weight: 700;
+    font-family: var(--nunito-sans);
+    color:rgba(var(--dark-rgb), 1);
+    cursor: pointer;
+    border:var(--accent-light);
+}
