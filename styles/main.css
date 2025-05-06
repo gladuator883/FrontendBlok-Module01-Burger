@@ -10,6 +10,7 @@
     
     --light-rgb:255, 255, 255;
     --dark-rgb:68, 55, 55;
+    --solight-rgb:#DEDEDE;
 } 
 
 body{
@@ -236,4 +237,210 @@ body{
     color:rgba(var(--dark-rgb), 1);
     cursor: pointer;
     border:var(--accent-light);
+}
+
+/*Menu*/
+
+.menu-header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top:100px;
+    margin-bottom:34px;
+    
+}
+
+.menu-title{
+    margin-top:0;
+    margin-bottom:0;
+    font-family: var(--nunito-sans);
+    font-weight:700px;
+    font-size:44px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color:rgba(var(--dark-rgb), 1)
+}
+
+
+select{
+    width: 279px;
+    height:44px;
+    border:1px solid var(--solight-rgb);
+    background: #FFFFFF;
+    font-family: var(--open-sans);
+    font-weight:400px;
+    letter-spacing:0px;
+    border-radius: 22px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/menu/strelka.svg);
+    background-repeat:no-repeat;
+    background-position: right 30px center;
+    background-size: 13px 8px;
+}
+
+option{
+    color:rgba(var(--dark-rgb), 1);
+    font-family:var(--open-sans);
+    font-size: 15px;
+    font-style:normal;
+    font-weight:400;
+    line-height:160%;
+}
+
+.menu-box {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);  /* количество ячеек; ширина far пропорции */ 
+    grid-template-rows: auto; /* высота строк */
+    gap: 50px 20px;
+}
+
+.menu-thumb {
+    width:100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-thumb img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.menu-name{
+    text-align: center;
+    display: grid;
+    margin-top:20px;
+    margin-bottom: auto;
+    color:rgba(var(--dark-rgb), 1);
+    font-family:var(--nunito-sans);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.menu-name222{
+    text-align: center;
+    display: grid;
+    text-align:right 10px;
+    margin-top:20px;
+    margin-bottom: auto;
+    color:rgba(var(--dark-rgb), 1);
+    font-family:var(--nunito-sans);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.menu-price{
+    display: grid;
+    text-align: center;
+    text-align: top 10px;
+    color:rgba(var(--dark-rgb), 0.5);
+    font-family: var(--nunito-sans);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5px;
+    margin-bottom: 26px;
+}
+
+.menu-btn{
+    display: block;
+    margin:0 auto;
+    position: relative;
+    z-index: 10;
+    width: 152px;
+    height: 38px;
+    border-radius: 5px;
+    font-family: var(--nunito-sans);
+    text-transform: uppercase;
+    border:none;
+    background-color: var(--accent-light);
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    flex-shrink: 0;
+    font-weight:700;
+    font-weight:normal;
+    color:var((--dark-rgb),1);
+    padding-top: 10.5px;
+    padding-bottom: 10px;
+    padding-left:52px;
+    padding-right:30px;
+    background-image:url(../images/menu/telega.svg);
+    background-repeat:no-repeat;
+    background-position: left 29px center;
+}
+
+
+/**********************************ДОПОЛНИТЕЛЬНО*******************************************/
+
+
+
+.menu-name2{
+    text-align: center;
+    display: grid;
+    margin-top:28px;
+    margin-bottom: auto;
+    color:rgba(var(--dark-rgb), 1);
+    font-family:var(--nunito-sans);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.menu-price2{
+    display: grid;
+    text-align: center;
+    margin-top:10px;
+    color:rgba(var(--dark-rgb), 0.5);
+    font-family: var(--nunito-sans);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5px;
+    margin-bottom: 27px;
+}
+
+.menu-btn2{
+    display: block;
+    margin:0 auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    position: relative;
+    z-index: 0;
+    width: 152px;
+    height: 38px;
+    border-radius: 5px;
+    font-family: var(--nunito-sans);
+    text-transform: uppercase;
+    border:none;
+    background-color: var(--accent-light);
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    flex-shrink: 0;
+    font-weight:700;
+    font-weight:normal;
+    color:var((--dark-rgb),1);
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left:52px;
+    padding-right:30px;
+    background-image:url(../images/menu/telega.svg);
+    background-repeat:no-repeat;
+    background-position: left 29px center;
 }
