@@ -453,7 +453,11 @@ option{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color:var(--footer-rgb,1)
+    background-color:var(--footer-rgb,1);
+    /*********/
+    padding-bottom:120px;
+
+
 }
   
 .footer-wrapper{
