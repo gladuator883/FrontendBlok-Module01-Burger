@@ -11,6 +11,7 @@
     --light-rgb:255, 255, 255;
     --dark-rgb:68, 55, 55;
     --solight-rgb:#DEDEDE;
+    --footer-rgb:#1E2F40;
 } 
 
 body{
@@ -418,10 +419,11 @@ option{
 .menu-btn2{
     display: block;
     margin:0 auto;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 0px;
+    margin-bottom: 140px;
     position: relative;
-    z-index: 0;
+    top:10px;
+    z-index: 10;
     width: 152px;
     height: 38px;
     border-radius: 5px;
@@ -436,11 +438,193 @@ option{
     font-weight:700;
     font-weight:normal;
     color:var((--dark-rgb),1);
-    padding-top: 11px;
-    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     padding-left:52px;
     padding-right:30px;
     background-image:url(../images/menu/telega.svg);
     background-repeat:no-repeat;
     background-position: left 29px center;
+}
+/**************************************НИЗ*******************************************/
+.footer{
+    padding-top: 30px;
+    margin-top:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:var(--footer-rgb,1)
+}
+  
+.footer-wrapper{
+   position: relative;
+   top:85px;
+   left:-10px;
+   padding-left:10px;
+}
+  
+.footer-logo{
+
+}
+  
+.footer-title{
+    display: block;
+    font-family: var(--nunito-sans);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 38px; /* 190% */
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+  
+.footer-nav{
+    display: flex;
+    flex-direction:column;
+    padding-top:-10px;
+    margin-bottom:-10px;
+    line-height: 31px;
+    position: relative;
+    top:-10px;
+    letter-spacing:0px;
+    /******************/
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: var(--open-sans);
+    color:rgba(var(--light-rgb), 0.9)
+}
+
+
+  
+.footer-item{
+    display: inline-block;
+    margin-top:-3px;
+    color: var(--solight-rgb);
+    /*************/
+ 
+}
+
+.footer-list{
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    padding-left: 0;
+    padding-top:10px;
+    margin-bottom:0;
+    top:-10px;
+    line-height: 22px;
+  }
+  
+.footer-tel1{
+   display: flex;
+   flex-direction: row;
+   position: relative; 
+   top: -18px;
+   left:138px;
+   text-decoration:none;
+   /***/
+   font-family: var(--nunito-sans);
+   color:var(--accent-light);
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 800;
+   line-height: 38px; /* 190% */
+   text-transform: uppercase;
+}
+.footer-tel2{
+   display: flex;
+   flex-direction: row;
+   position: relative; 
+   top: -18px;
+   left:138px;
+   text-decoration:none;
+      /***/
+   font-family: var(--nunito-sans);
+   color:var(--accent-light);
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 800;
+   line-height: 38px; /* 190% */
+   text-transform: uppercase;
+}
+
+
+
+.footer-item:nth-last-child(3) {
+    margin-top:-10px;
+    margin-left:200px;
+    margin-right:100px;
+    
+}
+
+.footer-item:nth-child(2) {
+    margin-right:155px;
+
+}
+
+
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+
+}
+
+.footer-wrapper img{
+    background-repeat: no-repeat;
+    background-size:100% auto;
+ 
+}
+
+a {
+    color: var(--light-rgb),0.8;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+.gg{
+    position: absolute;
+    margin-top:10px;
+    top:80px;
+    font-family: var(--open-sans);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color:var(--light-rgb,0.9)
+}
+
+.ddd{
+    position: absolute;
+    color:var(--light);
+    font-family: var(--open-sans);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    top:100px;
+
+}
+
+.footer-item:nth-last-of-type(2){
+    color:var(--light);
+    font-family: var(--open-sans);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.gv{
+   font-family:var(--open-sans);
+   color:var(--solight-rgb,0.9);
+   font-size: 15px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
 }
