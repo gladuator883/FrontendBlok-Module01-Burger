@@ -12,6 +12,9 @@
     --dark-rgb:68, 55, 55;
     --solight-rgb:#DEDEDE;
     --footer-rgb:#1E2F40;
+
+    --tr:.2s;
+    --tr2:.4s;
 } 
 
 body{
@@ -52,8 +55,8 @@ body{
     flex-grow: 1;
     display:flex;
     gap: 47px;
-
 }
+
 .nav-link{
     color:var(--dark);
     text-decoration:none;
@@ -68,6 +71,7 @@ body{
     height:3px;
     background-color: transparent; /*прозрачная линия*/
     border-radius:1.5px;
+    transition: var(--tr2);
 }
 .nav-link:hover:after{   /*при наведении курсором горит линия (псевдоэлемент)*/
     background-color: var(--accent-light);
@@ -146,6 +150,7 @@ body{
 .breadcrumbs-link{
     color:rgba(var(--light-rgb), .5);
     text-decoration:none;
+    transition: var(--tr2);
 }
 
 .breadcrumbs-link:hover{
@@ -237,7 +242,12 @@ body{
     font-family: var(--nunito-sans);
     color:rgba(var(--dark-rgb), 1);
     cursor: pointer;
-    border:var(--accent-light);
+    border:none;
+    transition: var(--tr);
+}
+
+.banner-btn:hover {
+    background-color: var(--accent-dark);
 }
 
 /*Menu*/
@@ -383,8 +393,13 @@ option{
     background-image:url(../images/menu/telega.svg);
     background-repeat:no-repeat;
     background-position: left 29px center;
+    transition: var(--tr);
 }
 
+
+.menu-btn:hover {
+    background-color: var(--accent-dark);
+}
 
 /**********************************ДОПОЛНИТЕЛЬНО*******************************************/
 
@@ -445,6 +460,12 @@ option{
     background-image:url(../images/menu/telega.svg);
     background-repeat:no-repeat;
     background-position: left 29px center;
+    transition: var(--tr);
+    
+}
+
+.menu-btn2:hover {
+    background-color: var(--accent-dark);
 }
 /**************************************НИЗ*******************************************/
 .footer{
@@ -496,9 +517,22 @@ option{
     font-style: normal;
     font-weight: 400;
     font-family: var(--open-sans);
-    color:rgba(var(--light-rgb), 0.9)
+    color:rgba(var(--light-rgb), 0.9);
+    
+
 }
 
+.breadcrumbs2-link{
+    color:rgba(var(--light-rgb), .5);
+    text-decoration:none;
+    transition: var(--tr2);
+}
+
+
+
+.breadcrumbs2-link:hover{
+    color:var(--accent-light);
+}
 
   
 .footer-item{
@@ -535,6 +569,7 @@ option{
    font-weight: 800;
    line-height: 38px; /* 190% */
    text-transform: uppercase;
+   transition: var(--tr2)
 }
 .footer-tel2{
    display: flex;
@@ -551,8 +586,16 @@ option{
    font-weight: 800;
    line-height: 38px; /* 190% */
    text-transform: uppercase;
+   transition: var(--tr2)
 }
 
+.footer-tel1:hover{
+    color:var(--light);
+}
+
+.footer-tel2:hover{
+    color:var(--light);
+}
 
 
 .footer-item:nth-last-child(3) {
