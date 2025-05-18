@@ -113,6 +113,40 @@ body{
     bottom:0;
 }
 
+
+.button-up{
+    padding:5px 0px;
+    position: fixed;
+    right:10px;
+    bottom:10px;
+    text-align: center;
+    max-height: 58px;
+    background-color: var(--accent-light);
+    border-radius:5px;
+    text-transform: uppercase;
+    font-size:14px;
+    font-weight: 700;
+    font-family: var(--nunito-sans);
+    color:rgba(var(--dark-rgb), 1);
+    cursor: pointer;
+    border:none;
+    transition: var(--tr);
+}
+
+.button-up:hover {
+    background-color: var(--accent-dark);
+}
+
+
+.button-up.hidden{
+    opacity:0;
+}
+
+.button-up.visible{
+    opacity:1;
+}
+
+
 /*hero  где картинка с бургером*/
 .hero{
     background-image: url(../images/hero.svg);
@@ -241,9 +275,12 @@ body{
 }
 
 .banner-btn{
+    display: block;
+    padding:22px 0px;
+    text-align: center;
+    max-width: 170px;
+    max-height: 58px;
     background-color: var(--accent-light);
-    Width:170px;
-    height: 58px;
     border-radius:5px;
     text-transform: uppercase;
     font-size:14px;
