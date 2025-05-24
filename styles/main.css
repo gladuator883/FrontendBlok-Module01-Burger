@@ -35,6 +35,7 @@ body{
     margin:0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing:border-box;
 
 }
 /*Header*/
@@ -46,7 +47,7 @@ body{
 .header-wrapper{
     display: flex; /* слова в ряд*/
     align-items:center; /*расположение по центру*/
-    gap: 196px;                /* свойство элемента между ячейками*/
+    gap: 56px;                /* свойство элемента между ячейками*/
     padding-top:26px;
     padding-bottom: 26px;
 }
@@ -55,6 +56,7 @@ body{
     flex-grow: 1;
     display:flex;
     gap: 47px;
+    margin-left: min(10vw, 140px);
 }
 
 .nav-link{
@@ -821,4 +823,38 @@ a:hover {
 
 .contact-tel:hover {
     color: var(--accent-light);
+}
+
+/*******************************************МЕДИА ЗАПРОСЫ************************************************************************/
+
+@media (max-width: 1080px) {
+    .header-wrapper{
+        gap:40px;
+    }
+    .nav{
+        margin-left:0;
+        gap: min(3vw, 30px);
+    }
+}
+
+@media (max-width: 768px) {
+   .logo{
+        width: 150px;
+        height: 47.81px;
+    }
+    .header-wrapper{
+        gap:45px;
+    }
+    .nav{
+        gap: 22px;
+    }
+    .banner{
+        margin-top:72px;
+    }
+    .banner-wrapper{
+    padding: 100px 40px;
+    }
+    .menu-header{
+    margin-top:80px;
+    }
 }
