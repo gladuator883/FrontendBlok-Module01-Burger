@@ -41,3 +41,4 @@
                document.getElementById('btnUp').className = 'button-up hidden';
            }
        }
+  /***/
