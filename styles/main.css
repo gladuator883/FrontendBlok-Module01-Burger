@@ -534,6 +534,7 @@ option{
    top:85px;
    left:-10px;
    padding-left:10px;
+   gap:15px;
 }
   
 .footer-logo{
@@ -549,6 +550,7 @@ option{
     line-height: 38px; /* 190% */
     text-transform: uppercase;
     justify-content: space-between;
+    gap:15px;
 }
   
 .footer-nav{
@@ -601,6 +603,11 @@ option{
     top:-10px;
     line-height: 22px;
   }
+
+.footer-item:last-child{
+    flex-basis: 194px;
+}
+
   
 .footer-tel1{
    display: flex;
@@ -608,6 +615,7 @@ option{
    position: relative; 
    top: -18px;
    left:138px;
+   text-align: right;
    text-decoration:none;
    /***/
    font-family: var(--nunito-sans);
@@ -623,6 +631,7 @@ option{
    display: flex;
    flex-direction: row;
    position: relative; 
+   text-align: right;
    top: -18px;
    left:138px;
    text-decoration:none;
@@ -635,6 +644,15 @@ option{
    line-height: 38px; /* 190% */
    text-transform: uppercase;
    transition: var(--tr2)
+}
+
+.footer-tel1._mobile{
+   display: none;
+
+}
+.footer-tel2._mobile{
+   display: none;
+
 }
 
 .footer-tel1:hover{
@@ -852,9 +870,40 @@ a:hover {
         margin-top:72px;
     }
     .banner-wrapper{
-    padding: 100px 40px;
+        padding: 100px 40px;
     }
     .menu-header{
-    margin-top:80px;
+        margin-top:80px;
+    }
+    .menu-box {
+        grid-template-columns: repeat(2, 1fr);  /* количество ячеек; ширина far пропорции */ 
+        gap: 50px 20px;
+    }
+    .menu-box._dop{
+        grid-template-columns: 1fr;
+    }
+    .menu-item._dop{
+        display:flex;
+        align-items: center;
+        gap:20px;
+    }
+    .menu-item._dop .menu-thumb{
+        flex-basis:calc(60%-20px);
+        height: 260px;
+        margin-bottom: 0;   
+    }
+
+    .menu-item._dop .menu-info{
+        flex-basis:40%; 
+    }
+
+    .footer-item:last-child{
+        display: none;
+    }
+    .footer-tel1._mobile{
+        display: block;
+    }
+    .footer-tel2._mobile{
+        display: block;
     }
 }
