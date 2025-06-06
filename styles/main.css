@@ -331,6 +331,17 @@ body{
     color:rgba(var(--dark-rgb), 1)
 }
 
+.menu-title2{
+    margin-top:0;
+    margin-bottom:0;
+    font-family: var(--nunito-sans);
+    font-weight:700px;
+    font-size:44px;
+    line-height: 127%;
+    text-transform: uppercase;
+    color:rgba(var(--dark-rgb), 1)
+}
+
 
 select{
     width: 279px;
@@ -376,7 +387,23 @@ option{
     overflow: hidden;
 }
 
+.menu-thumb2 {
+    width:100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+
 .menu-thumb img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.menu-thumb2 img{
     width: 100%;
     height: auto;
     position: absolute;
@@ -559,6 +586,8 @@ option{
     margin-bottom:13px;
 
 }
+
+
   
 .footer-nav{
     display: flex;
@@ -811,7 +840,7 @@ a:hover {
     .menu-item._dop{
         display:flex;
         align-items: center;
-        gap:20px;
+        gap:30px;
     }
     .menu-item._dop .menu-thumb{
         flex-basis:calc(60%-20px);
@@ -825,7 +854,7 @@ a:hover {
     
 
     .footer{
-        padding-top: 62px;
+        padding-top: 66px;
         padding-bottom: 71px;
     }
 
@@ -931,6 +960,7 @@ a:hover {
     
     .banner-title{
         margin-bottom:9px;
+
     }
 
     .banner-description{
@@ -941,6 +971,191 @@ a:hover {
 
     .banner-btn{
         max-width:198px;
+        max-height:14px;
     }
+
+    .menu-title{
+       color:rgba(var(--dark));
+       font-family: var(--nunito-sans);
+       font-size: 27px;
+       margin-top:-24px;
+    }
+
+    .menu-title2{
+       color:rgba(var(--dark));
+       font-family: var(--nunito-sans);
+       font-size: 27px;
+       margin-top:-24px;
+    }
+
+    select{
+       width: 136px;
+       font-size:12px;
+       margin-top:-20px;
+       padding-left: 12px;
+       background-position: right 11px center;
+    }
+
+    .menu-box{
+       gap: 24px 20px;
+    }
+
+    .menu-thumb{
+        margin-bottom:10px;
+        height:50vw;
+    }
+
+    .menu-thumb img{
+        transform: translate(-51%,-56%);
+
+    }
+
+    .menu-item._dop .menu-thumb{
+        height: 30vw; 
+    }
+
+    .menu-item._dop .menu-thumb2{
+        height: -40vw; 
+    }
+    
+    .menu-name{
+       font-size: 13px;
+       margin-bottom: 8px;
+       margin-top:-25px;
+    }
+
+    .menu-name222{
+       font-size: 13px;
+       margin-bottom: 8px;
+       margin-top:-25px;
+    }
+
+    .menu-name2{
+        margin-top: -53px;
+        margin-right: -2px;
+        font-size:13px;
+    }
+  
+    .menu-title2{
+        margin-top:-19px;
+    }
+
+    .menu-thumb2{
+        margin-bottom:10px;
+        height:50vw;
+    }
+   
+    .menu-thumb2 img{
+        transform: translate(-51%,-56%);
+    }
+
+    .menu-price{
+       font-size: 12px;
+       margin-top:-6px;
+   }
+
+    .menu-price2{
+       font-size: 13px;
+       margin-top:7px;
+   }
+
+    .menu-btn{
+        padding: 12px 10px;
+        width: 129px;
+        margin-top: -4px;
+        background-position: left 21px center;
+        padding-left: 30px;
+    }
+
+
+
+    .footer{
+       margin-top:85px;
+    }
+
+    .footer-wrapper{
+        flex-direction: column;
+        gap:35px;
+    }
+
+    .footer-logo {
+        margin-bottom: 9px;
+    }
+
+    .footer-tel._mobile {
+        position: absolute;
+        top: 2449px;
+        right:16px;
+        bottom: 10px;
+    }
+
+    .footer-tel._mobile +.footer-tel._mobile{
+        position: absolute;
+        top: 2486px;
+        right: 16px;
+    }
+
+    .footer-title{
+        font-size: 18px;
+    }
+
+    .footer-nav{
+        margin-bottom: 0;
+    }
+
+
+}
+@media (max-width: 450px){
+    
+    .menu-item._dop .menu-thumb{
+        flex-basis: calc(100% - 130px - 20px);
+        height: 30vw; 
+    }
+
+
+    .menu-item._dop .menu-thumb2{
+        flex-basis: calc(100% - 128px - 18px);
+        height: 30vw; 
+        
+    }
+    
+    .menu-item._dop .menu-info{
+        flex-basis: 130px; 
+    }
+
+    .menu-item._dop{
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        height: 141px;
+    }
+
+    .menu-btn2{
+       top:-15px;
+       height:40px;
+       margin-bottom:-140px;
+       width:131px;
+
+    }
+    
+    .footer-tel._mobile {
+        position: absolute;
+        top: 2449px;
+        right:16px;
+        bottom: 10px;
+    }
+
+    .footer-tel._mobile +.footer-tel._mobile{
+        top: 2486px;
+        right: 16px;
+    }
+
+
 }
 
+
+
+
+
+
+        
