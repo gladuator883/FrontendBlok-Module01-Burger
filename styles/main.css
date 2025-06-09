@@ -1,12 +1,12 @@
 :root {
-    --open-sans:"Open Sans", sans-serif;       /* шрифт */
-    --nunito-sans: "Nunito Sans", sans-serif;  /* шрифт */
+    --open-sans:"Open Sans", sans-serif;       
+    --nunito-sans: "Nunito Sans", sans-serif;  
 
-    --accent-light: #FBB731;  /* цвет кнопки */
-    --accent-dark: #F37335;   /* цвет кнопки */
+    --accent-light: #FBB731;  
+    --accent-dark: #F37335;   
                                 
-    --dark:#443737;           /* цвет текста для кнопки */
-    --light:#FFFFFF;          /* цвет текста для кнопки */                  
+    --dark:#443737;           
+    --light:#FFFFFF;                           
     
     --light-rgb:255, 255, 255;
     --dark-rgb:68, 55, 55;
@@ -48,16 +48,15 @@ body{
     padding-right: 15px;
     box-sizing: border-box;
 }
-/*Header*/
 
 .header{
     border-bottom: 1px solid #dedede
 }
 
 .header-wrapper{
-    display: flex; /* слова в ряд*/
-    align-items:center; /*расположение по центру*/
-    gap: 56px;                /* свойство элемента между ячейками*/
+    display: flex; 
+    align-items:center; 
+    gap: 56px;                
     padding-top:26px;
     padding-bottom: 26px;
 }
@@ -77,16 +76,16 @@ body{
     font-weight:600;
 }
 
-.nav-link::after{       /*свойство желтой линии под текстом*/
+.nav-link::after{       
     content:'';
     display:block;
     width: 100%;
     height:3px;
-    background-color: transparent; /*прозрачная линия*/
+    background-color: transparent; 
     border-radius:1.5px;
     transition: var(--tr2);
 }
-.nav-link:hover:after{   /*при наведении курсором горит линия (псевдоэлемент)*/
+.nav-link:hover:after{   
     background-color: var(--accent-light);
 }
 
@@ -159,8 +158,6 @@ body{
     opacity:1;
 }
 
-
-/*hero  где картинка с бургером*/
 .hero{
     background-image: url(../images/hero.avif);
     background-repeat: no-repeat;
@@ -375,8 +372,8 @@ option{
 
 .menu-box {
     display:grid;
-    grid-template-columns: repeat(3, 1fr);  /* количество ячеек; ширина far пропорции */ 
-    grid-template-rows: auto; /* высота строк */
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: auto; 
     gap: 50px 20px;
 }
 
@@ -487,7 +484,7 @@ option{
     background-color: var(--accent-dark);
 }
 
-/**********************************ДОПОЛНИТЕЛЬНО*******************************************/
+/*ДОПОЛНИТЕЛЬНО*/
 
 
 
@@ -552,7 +549,7 @@ option{
 .menu-btn2:hover {
     background-color: var(--accent-dark);
 }
-/**************************************НИЗ*******************************************/
+/*НИЗ*/
 .footer{
     background-color:var(--footer-rgb,1);
     padding-top: 110px;
@@ -580,15 +577,12 @@ option{
     font-family: var(--nunito-sans);
     font-size: 20px;
     font-weight: 800;
-    line-height: 190%; /* 190% */
+    line-height: 190%; 
     text-transform: uppercase;
     margin-top:0;
     margin-bottom:13px;
 
 }
-
-/**/
-  
 
 .footer-item{
     position:relative;
@@ -664,7 +658,7 @@ option{
 }
 
 li {
-  list-style-type: none; /* Убираем маркеры */
+  list-style-type: none; 
 
 }
 
@@ -704,7 +698,7 @@ a:hover {
    line-height: 24px;
 }
 
-/************Contacts******************/
+/*Contacts*/
 
 .contact-main {
     display: flex;
@@ -812,7 +806,7 @@ nav._modal{
     display:none
 }
 
-/*******************************************МЕДИА ЗАПРОСЫ************************************************************************/
+/*МЕДИА ЗАПРОСЫ*/
 
 @media (max-width: 1080px) {
     .header-wrapper{
@@ -842,13 +836,13 @@ nav._modal{
         margin-top:72px;
     }
     .banner-wrapper{
-        padding: 100px 40px; /*CВЕРХУ СНИЗУ 100PX ; СЛЕВА СПРАВА 40PX*/
+        padding: 100px 40px; 
     }
     .menu-header{
         margin-top:80px;
     }
     .menu-box {
-        grid-template-columns: repeat(2, 1fr);  /* количество ячеек; ширина far пропорции */ 
+        grid-template-columns: repeat(2, 1fr);  
     }
     .menu-box._dop{
         grid-template-columns: 1fr;
@@ -907,7 +901,7 @@ nav._modal{
         flex-direction: column;
     }
 
-    .nav-link::after{       /*свойство желтой линии под текстом*/
+    .nav-link::after{       
         display:none;
     }
 
