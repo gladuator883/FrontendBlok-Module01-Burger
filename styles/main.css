@@ -587,8 +587,14 @@ option{
 
 }
 
-
+/**/
   
+
+.footer-item{
+    position:relative;
+}
+
+
 .footer-nav{
     display: flex;
     flex-direction:column;
@@ -1084,14 +1090,14 @@ a:hover {
 
     .footer-tel._mobile {
         position: absolute;
-        top: 2449px;
-        right:16px;
-        bottom: 10px;
+        top: 0px;
+        right:15px;
+        bottom: 5px;
     }
 
     .footer-tel._mobile +.footer-tel._mobile{
         position: absolute;
-        top: 2486px;
+        top: 38px;
         right: 16px;
     }
 
@@ -1139,15 +1145,16 @@ a:hover {
     }
     
     .footer-tel._mobile {
+        margin-top:-80px;
         position: absolute;
-        top: 2449px;
-        right:16px;
+        top:-30px;
+        right:7px;
         bottom: 10px;
     }
 
     .footer-tel._mobile +.footer-tel._mobile{
-        top: 2486px;
-        right: 16px;
+        top: 10px;
+        right: 7px;
     }
 
 
