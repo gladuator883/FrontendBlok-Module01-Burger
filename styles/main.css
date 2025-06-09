@@ -25,7 +25,7 @@ body{
     display:none;
     width:34px;
     height:22px;
-    background-image: url(../images/burger-menu.svg);
+    background-image: url(../images/burger-menu.avif);
     background-repeat:no-repeat;
     background-size:contain;
     background-color:transparent;
@@ -36,7 +36,7 @@ body{
     display: block;
     width: 176px;
     height: 56px;
-    background-image: url(../images/logo.svg);
+    background-image: url(../images/logo.avif);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -106,7 +106,7 @@ body{
     display: block;
     width: 30px;
     height: 26px;
-    background-image: url(../images/cart.svg);
+    background-image: url(../images/cart.avif);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -174,7 +174,7 @@ body{
 /* 2 страница */
 
 .hero-contact{
-    background-image: url(../images/hero-contact.jpg);
+    background-image: url(../images/hero-contact.avif);
 }
 
 
@@ -358,7 +358,7 @@ select{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-image: url(../images/menu/strelka.svg);
+    background-image: url(../images/menu/strelka.avif);
     background-repeat:no-repeat;
     background-position: right 30px center;
     background-size: 13px 8px;
@@ -476,7 +476,7 @@ option{
     padding-bottom: 10px;
     padding-left:52px;
     padding-right:30px;
-    background-image:url(../images/menu/telega.svg);
+    background-image:url(../images/menu/telega.avif);
     background-repeat:no-repeat;
     background-position: left 29px center;
     transition: var(--tr);
@@ -542,7 +542,7 @@ option{
     padding-bottom: 0px;
     padding-left:52px;
     padding-right:30px;
-    background-image:url(../images/menu/telega.svg);
+    background-image:url(../images/menu/telega.avif);
     background-repeat:no-repeat;
     background-position: left 29px center;
     transition: var(--tr);
@@ -570,7 +570,7 @@ option{
     display: block;
     width:63px;
     height:56px;
-    background-image: url(../images/logofooter/Logo_light.png);
+    background-image: url(../images/logofooter/Logo_light.avif);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -777,13 +777,13 @@ a:hover {
 }
 
 .contact-additionally > li:nth-child(1):before {
-    background-image: url(../images/contact/01.svg);
+    background-image: url(../images/contact/01.avif);
 }
 .contact-additionally > li:nth-child(2):before {
-    background-image: url(../images/contact/02.svg);
+    background-image: url(../images/contact/02.avif);
 }
 .contact-additionally > li:nth-child(3):before {
-    background-image: url(../images/contact/03.svg);
+    background-image: url(../images/contact/03.avif);
 }
 
 .contact-info,
@@ -940,7 +940,7 @@ nav._modal{
         display:block;
         width:22px;
         height:22px;
-        background-image:url(../images/close.svg);
+        background-image:url(../images/close.avif);
         background-repeat: no-repeat;
         background-size: contain;
         background-color:transparent;
