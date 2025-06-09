@@ -162,7 +162,7 @@ body{
 
 /*hero  где картинка с бургером*/
 .hero{
-    background-image: url(../images/hero.svg);
+    background-image: url(../images/hero.avif);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
@@ -238,7 +238,7 @@ body{
 
 .banner-wrapper{
     padding: 100px;
-    background-image: url(../images/burger.svg);
+    background-image: url(../images/burger.avif);
     display:block;
     background-repeat: no-repeat;
 }
@@ -805,6 +805,13 @@ a:hover {
     color: var(--accent-light);
 }
 
+.modal-close{
+    display: none;
+}
+nav._modal{
+    display:none
+}
+
 /*******************************************МЕДИА ЗАПРОСЫ************************************************************************/
 
 @media (max-width: 1080px) {
@@ -814,6 +821,9 @@ a:hover {
     .nav{
         margin-left:0;
         gap: min(3vw, 30px);
+    }
+    .modal-close{
+        display: none;
     }
 }
 
@@ -875,6 +885,10 @@ a:hover {
         display: block;
         text-align:left;
     }
+
+    .modal-close{
+        display: none;
+    }
 }
 
 @media (max-width:730px){
@@ -934,6 +948,7 @@ a:hover {
         position: absolute;
         top:20px;
         right:20px;
+
     }
 
     .hero{
@@ -1108,7 +1123,7 @@ a:hover {
     .footer-nav{
         margin-bottom: 0;
     }
-    
+
 }
 @media (max-width: 450px){
     
